@@ -13,6 +13,6 @@ var_dump($mysqli);
 if ($mysqli->connect_error) {
     error_log("Failed to connect to database: ". $mysqli->connect_error);
     echo "erro", $mysqli->connect_error;
-    //header("Location: ../error.php");
+    header("Location: ../error.php");
     exit;
 }
